@@ -1,11 +1,8 @@
 import React from 'react';
+import HomePage from './pages/HomePage';
 
 const App = () => {
-  return (
-    <main>
-      {/* Your componets will be here */}
-    </main>
-  );
+  return <HomePage />
 };
 
 export default App;

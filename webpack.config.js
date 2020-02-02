@@ -22,16 +22,16 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: `${__dirname  }/dist`,
+    path: `${__dirname  }/public`,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'js/bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('bundle.css')
+    new ExtractTextPlugin('css/bundle.css')
   ],
   devServer: {
-    contentBase: './dist',
+    contentBase: './public',
     hot: true
   }
 };
